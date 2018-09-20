@@ -2,7 +2,7 @@
 <body class="login-bg">
 
     <div class="login layui-anim layui-anim-up">
-        <div class="message">x-admin2.0-管理登录</div>
+        <div class="message">PLAY管理登录</div>
         <div id="darkbannerwrap"></div>
 
         <form method="post" class="layui-form" >
@@ -10,7 +10,10 @@
             <hr class="hr15">
             <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
             <hr class="hr15">
-						<input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
+            <div>
+                <input style="width:50%; float:left;" class="layui-input" placeholder="验证码" name="code" type="text">
+                <img class="form-control" style="width:50%; height:50px;border:0;float:left; cursor:pointer;" onclick="this.src='/captcha.html?'+Math.random()" src="/captcha.html">
+            </div>
             <hr class="hr15">
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
