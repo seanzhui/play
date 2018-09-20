@@ -7,12 +7,21 @@ use think\Request;
 
 class Admin extends Controller
 {
-
+    /**
+     * 显示资源列表
+     *
+     * @return \think\Response
+     */
     public function index()
     {
-        $this->fetch('admin/index');
+      return $this->fetch('admin/index');
     }
 
+    /**
+     * 显示创建资源表单页.
+     *
+     * @return \think\Response
+     */
     public function create()
     {
         //

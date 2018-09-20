@@ -5,7 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 
-class Article extends Controller
+class Conf extends Controller
 {
     /**
      * 显示资源列表
@@ -14,9 +14,8 @@ class Article extends Controller
      */
     public function index()
     {
-      return $this->fetch('article/index');
+      return $this->fetch('conf/index');
     }
-
 
     /**
      * 显示创建资源表单页.
