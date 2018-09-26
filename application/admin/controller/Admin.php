@@ -1,11 +1,7 @@
 <?php
-
 namespace app\admin\controller;
-
-use think\Controller;
-use think\Request;
-
-class Admin extends Controller
+use app\admin\controller\Common;
+class Admin extends Common
 {
     /**
      * 显示资源列表
